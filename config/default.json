@@ -1,0 +1,33 @@
+{
+  "domain": "localdns.local",
+  "port": 80,
+  "db": "mongodb://db/dev",
+  "contact": "root@localhost",
+  "dns": {
+    "host": "0.0.0.0",
+    "port": 53,
+    "records": [
+      {
+        "name": null,
+        "type": "NS",
+        "data": "ns1.localdns.local"
+      },
+      {
+        "name": "ns1",
+        "type": "A",
+        "data": "1.2.3.4"
+      },
+      {
+        "name": null,
+        "type": "A",
+        "data": "1.2.3.4"
+      }
+    ]
+  },
+  "ipRangeBlacklist": [
+    "127.0.0.0/8"
+  ],
+  "subdomainBlacklist": [
+    "www"
+  ]
+}
